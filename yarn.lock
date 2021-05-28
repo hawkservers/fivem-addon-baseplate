@@ -2,15 +2,20 @@
 # yarn lockfile v1
 
 
-"@citizenfx/client@^2.0.3971-1":
-  version "2.0.3971-1"
-  resolved "https://registry.yarnpkg.com/@citizenfx/client/-/client-2.0.3971-1.tgz#b1308a47f72406b0e0fe844a67cbdfafb02f0d66"
-  integrity sha512-/mmonNQXIpUR3l/+tYb12mUqZ5habOivikPjhiyN9dyg/QjutbWYR+18Y57hENryGi1psHeDrpZLxPCgmiMLoA==
+"@citizenfx/client@^1.0.3281-1":
+  version "1.0.3281-1"
+  resolved "https://registry.yarnpkg.com/@citizenfx/client/-/client-1.0.3281-1.tgz#e26d85cb3686f8e0c85fdb86dca159e027358418"
+  integrity sha512-hZ82+Z1CfFFWYqTohDc9K2Cn00NAGQ4Hv34JH9kQpMsA2talHVUXjZOZ78/Dtk0DcGVA2beSYfA8fMm6ZrKmHg==
 
-"@citizenfx/server@^2.0.3971-1":
-  version "2.0.3971-1"
-  resolved "https://registry.yarnpkg.com/@citizenfx/server/-/server-2.0.3971-1.tgz#bedc2c8ee9243e7d677bc135a54b94dc3512c412"
-  integrity sha512-PjHqQcPcjVuEp+aQRDebpcGGnQ3fqenOLCG8S9BTMYFP2eccEOpavDq2Gr1Iv1xANRh2BHR2nyTF047cX/cvoA==
+"@citizenfx/client@^2.0.4000-1":
+  version "2.0.4000-1"
+  resolved "https://registry.yarnpkg.com/@citizenfx/client/-/client-2.0.4000-1.tgz#02e6b01f265162f224dee118c9725c02e2727cb2"
+  integrity sha512-oO/2+EqW58W52RbRPYoD6/nKqWqfVrEWg8/Z8oRKVwJsTQAT7IKbj7tQRP2d8NApBoNGlorhrbKVfv3qUh0rXQ==
+
+"@citizenfx/server@^2.0.4000-1":
+  version "2.0.4000-1"
+  resolved "https://registry.yarnpkg.com/@citizenfx/server/-/server-2.0.4000-1.tgz#dceee4e9fcbfcb50f76492bc4d5cb8d8401c38ab"
+  integrity sha512-O461o4QFxEZoshV8+GCFiFbn/Rrjen8+33x3ZrIPF81jBQxZj3NQKkjnGFCeXlG7lJPczAxIJtutMjcJV5YRmA==
 
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.3"
@@ -72,10 +77,15 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
-"@types/node@*", "@types/node@^15.6.0":
+"@types/node@*":
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.0.tgz#f0ddca5a61e52627c9dcb771a6039d44694597bc"
   integrity sha512-gCYSfQpy+LYhOFTKAeE8BkyGqaxmlFxe+n4DKM6DR0wzw/HISUE/hAmkC/KT8Sw5PCJblqg062b3z9gucv3k0A==
+
+"@types/node@^15.6.1":
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.1.tgz#32d43390d5c62c5b6ec486a9bc9c59544de39a08"
+  integrity sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -89,10 +99,19 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.6":
+"@types/react@*":
   version "17.0.6"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.6.tgz#0ec564566302c562bf497d73219797a5e0297013"
   integrity sha512-u/TtPoF/hrvb63LdukET6ncaplYsvCvmkceasx8oG84/ZCsoLxz9Z/raPBP4lTAiWW1Jb889Y9svHmv8R26dWw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.8":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.8.tgz#fe76e3ba0fbb5602704110fd1e3035cf394778e3"
+  integrity sha512-3sx4c0PbXujrYAKwXxNONXUtRp9C+hE2di0IuxFyf5BELD+B+AXL8G7QrmSKhVwKZDbv0igiAjQAMhXj8Yg3aw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -702,6 +721,13 @@ find-up@^4.0.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+fivem-js@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/fivem-js/-/fivem-js-1.5.2.tgz#fe19bb7a194afa57c94575447476b8e62a949b8e"
+  integrity sha512-PONuAo9djL3UnEcVHxxLLHClQnpnLbiJXu2fNNGvi5Li/7IKfwn5PMHERrjr1Sq+oWeoao100LlsnlnA1mGCew==
+  dependencies:
+    "@citizenfx/client" "^1.0.3281-1"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -1516,10 +1542,10 @@ trash@6.1.1:
     uuid "^3.3.2"
     xdg-trashdir "^2.1.1"
 
-ts-loader@^9.2.1:
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.1.tgz#5699af8d10aa3a763aadfced1d4b275a432b76eb"
-  integrity sha512-BLfLa4paMQyf819haKxxbZqA1aLDqsk8XEZLmd7E1eBa0NsEHYFcTWlUlPmYMGhvD/IMi0NcIW3A/G7vzr3oiA==
+ts-loader@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.2.tgz#416333900621c82d5eb1b1f6dea4114111f096bf"
+  integrity sha512-hNIhGTQHtNKjOzR2ZtQ2OSVbXPykOae+zostf1IlHCf61Mt41GMJurKNqrYUbzHgpmj6UWRu8eBfb7q0XliV0g==
   dependencies:
     chalk "^4.1.0"
     enhanced-resolve "^5.0.0"
@@ -1531,10 +1557,10 @@ tslib@^2.0.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-typescript@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
+  integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
 
 uri-js@^4.2.2:
   version "4.4.1"

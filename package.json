@@ -1,23 +1,24 @@
 {
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "watch": "webpack --mode development --watch"
+    "build": "webpack --config webpack/webpack.config.js --hide-modules",
+    "dev": "webpack --config webpack/webpack.config.js",
+    "watch": "webpack --config webpack/webpack.config.js --watch"
   },
   "dependencies": {
+    "fivem-js": "^1.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@citizenfx/client": "^2.0.3971-1",
-    "@citizenfx/server": "^2.0.3971-1",
-    "@types/node": "^15.6.0",
-    "@types/react": "^17.0.6",
+    "@citizenfx/client": "^2.0.4000-1",
+    "@citizenfx/server": "^2.0.4000-1",
+    "@types/node": "^15.6.1",
+    "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "html-webpack-plugin": "^5.3.1",
     "remove-files-webpack-plugin": "^1.4.4",
-    "ts-loader": "^9.2.1",
-    "typescript": "^4.2.4",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   }
