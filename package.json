@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "webpack --config webpack/webpack.config.js --hide-modules",
+    "build": "webpack --config webpack/webpack.config.js --mode production",
     "dev": "webpack --config webpack/webpack.config.js",
     "watch": "webpack --config webpack/webpack.config.js --watch"
   },
