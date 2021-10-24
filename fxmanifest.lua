@@ -4,8 +4,8 @@ games { 'gta5' }
 description 'TypeScript & React Baseplate for FiveM'
 authors { "JackGamesFTW" }
 
-client_script 'dist/client/*.client.js'
-server_script 'dist/server/*.server.js'
+client_script 'dist/client.js'
+server_script 'dist/server.js'
 
 ui_page 'dist/nui/index.html'
 
