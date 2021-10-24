@@ -1,6 +1,4 @@
-const webpack = require('webpack');
 const path = require('path');
-const RemovePlugin = require('remove-files-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const buildPath = path.resolve(process.cwd(), 'dist');
 
@@ -18,22 +16,6 @@ const server = {
         ],
     },
 
-    plugins: [
-        new RemovePlugin({
-            before: {
-                include: [
-                    path.resolve(buildPath, 'server'),
-                ],
-            },
-
-            watch: {
-                include: [
-                    path.resolve(buildPath, 'server'),
-                ],
-            },
-        }),
-    ],
-
     optimization: {
         minimize: true,
     },
@@ -44,7 +26,7 @@ const server = {
 
     output: {
         filename: 'server.js',
-        path: path.resolve(buildPath, 'server'),
+        path: buildPath,
     }
 };
 
@@ -62,22 +44,6 @@ const client = {
         ],
     },
 
-    plugins: [
-        new RemovePlugin({
-            before: {
-                include: [
-                    path.resolve(buildPath, 'client'),
-                ],
-            },
-
-            watch: {
-                include: [
-                    path.resolve(buildPath, 'client'),
-                ],
-            },
-        }),
-    ],
-
     optimization: {
         minimize: true,
     },
@@ -88,7 +54,7 @@ const client = {
 
     output: {
         filename: 'client.js',
-        path: path.resolve(buildPath, 'client'),
+        path: buildPath,
     },
 };
 
@@ -107,13 +73,6 @@ const nui = {
     },
 
     plugins: [
-        new RemovePlugin({
-            before: {
-                include: [
-                    path.resolve(buildPath, 'nui'),
-                ],
-            },
-        }),
         new HtmlWebpackPlugin({
             template: path.join(process.cwd(), "src/nui/public/index.html"),
             inject: true,
